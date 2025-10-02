@@ -1,5 +1,29 @@
 @use "page.scss";
 
-p {
-    font-weight: bold;
+.unbound-app {
+    &__intro {
+        max-width: 720px;
+    }
+
+    &__loading {
+        align-items: center;
+        display: flex;
+        gap: var(--pf-v5-global--spacer--md);
+    }
+}
+
+.unbound-list-editor {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pf-v5-global--spacer--sm);
+
+    &__row {
+        gap: var(--pf-v5-global--spacer--sm);
+    }
+}
+
+.unbound-switch-grid {
+    display: grid;
+    gap: var(--pf-v5-global--spacer--md);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
